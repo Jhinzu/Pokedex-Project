@@ -1,0 +1,324 @@
+*, :after, :before {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+  
+  html, body, .h-100 {
+    height: 100%;
+  }
+  
+  .h-10 {
+    height: 10%;
+  }
+  
+  .h-20 {
+    height: 20%;
+  }
+  
+  .h-30 {
+    height: 30%;
+  }
+  
+  .h-40 {
+    height: 40%;
+  }
+  
+  .h-50 {
+    height: 50%;
+  }
+  
+  .h-60 {
+    height: 60%;
+  }
+  
+  .h-70 {
+    height: 70%;
+  }
+  
+  .h-80 {
+    height: 80%;
+  }
+  
+  .h-90 {
+    height: 90%;
+  }
+  
+  .slot {
+    position: relative;
+  }
+  .slot__machine {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    pointer-events: none;
+  }
+  .slot__machine::before, .slot__machine::after {
+    content: " ";
+    height: calc(50% - 122px);
+    background: white;
+    display: block;
+    pointer-events: auto;
+  }
+  .slot__window {
+    pointer-events: none;
+    left: -2px;
+    border: 2px black solid;
+    width: 84px;
+    height: 244px;
+    display: block;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgb(0, 0, 0) 100%);
+  }
+  .slot__row {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-left: 2px;
+  }
+  .slot__img, .slot__img img {
+    height: 80px;
+    width: 80px;
+  }
+  .slot__spacer {
+    height: calc(50% + 40px);
+  }
+  .slot__scroller {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .Box_Change_Character {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .Box_Change_Character > .List_Box {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .Box_Change_Character > .List_Box .Red {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border: 2px black solid;
+    border-bottom: 0px;
+    background: linear-gradient(to bottom, #e8302f 60%, #fca4a4);
+  }
+  .Box_Change_Character > .List_Box .White {
+    display: flex;
+    justify-content: center;
+    background: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 2px black solid;
+    border-top: 0;
+  }
+  
+  .Position_Pokeball_List {
+    position: absolute;
+    left: 5px;
+    top: 1px;
+  }
+  
+  /*.bottom_screen {
+  display: flex;
+  border: 1px solid;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+  */
+  html {
+    height: 100%;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .top_screen {
+    display: flex;
+    height: 50%;
+  }
+  
+  .bottom_screen {
+    height: 50%;
+    display: flex;
+  }
+  
+  .bottom_screen_box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .bottom_screen_box1_top {
+    width: 400px;
+    height: 30px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    background-color: #e8302f;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 100%;
+  }
+  .bottom_screen_box1_middle {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    position: relative;
+  }
+  .Teste_Pokeball
+  {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .bottom_screen_box1_middle_details {
+    max-width: 600px;
+    min-height: 200px;
+    border: 1px black solid;
+    border-left: #e8302f solid 10px;
+    border-right: #e8302f solid 10px;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 0px 1px #fca4a4;
+  }
+  
+  /*beginning of the details box*/
+  .bottom_screen_box1_bottom {
+    width: 400px;
+    height: 60px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  /*Diego*/
+  li {
+    list-style: none;
+    height: 19px;
+  }
+  
+  .Image_Sexe {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 100%;
+  }
+  
+  .Image_Type {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 100%;
+  }
+  
+  .Image_Atribut {
+    vertical-align: middle;
+    margin-left: 3px;
+    height: 100%;
+  }
+  
+  .List_Attribut {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+  
+  .Resum_Pokemon {
+    display: flex;
+  }
+  
+  .List_Attribut > li {
+    color: black;
+  }
+  
+  
+  /*Search Bar*/
+  .box_searchbar {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+    
+  }
+  
+  .searchbar {
+    width: 100%;
+    height: 80%;
+    border-radius: 0px;
+    border: 1px solid;
+    border-right: 0px;
+    display: flex;
+    align-self: flex-start;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+  }
+  
+  .magnifying_glass {
+    height: 80%;
+    border: 1px solid;
+    border-right: 0px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    transform: scaleX(-1);
+  }
+  /*mobile*/
+  @media  screen and (min-width:330px) and ( max-width:1000px ) {
+    .bottom_screen_box1_middle_details,.box_searchbar
+    {
+     width: 100%;
+    }
+    .bottom_screen_box1_middle
+    {
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+    .box_searchbar
+    {
+      width: 80%;
+      margin-left: 10px;
+    }
+    .slot
+    {
+      align-self: center;
+    }
+    .Teste_Pokeball
+    {
+      margin-bottom: 5px;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
