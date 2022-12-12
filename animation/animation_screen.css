@@ -31,8 +31,8 @@ html {
     background-position: 600px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-animation: screen-gameboy-text 5s infinite linear;
-    animation: screen-gameboy-text 5s infinite linear;
+    -webkit-animation: screen-gameboy-text 5s  linear;
+    animation: screen-gameboy-text 5s  linear;
     
   }
   @keyframes screen-gameboy-text {
@@ -83,4 +83,29 @@ html {
       opacity: 0;
     }
   }
-  
+
+  #intro_screen {
+    position:absolute;
+    width: 890px;
+    height: 600px;
+    border: black solid;
+    background-color: #85e367;
+    animation-name: intro_screen;
+    animation-duration: 7000ms;
+    animation-fill-mode: forwards;
+  }
+  @keyframes intro_screen{
+    100%{
+      opacity: 1;
+      transform: rotateX(90deg);
+    }
+    50%{
+      opacity: 0.5;
+      transform: rotateX(0deg);
+    }
+    0%{
+      display: none;
+      opacity: 0;
+      transform: rotateX(90deg);
+    }
+  }
