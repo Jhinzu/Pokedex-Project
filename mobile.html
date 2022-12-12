@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="Mobile.css">
+<link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/9a698fdf91.js" crossorigin="anonymous"></script>
 <title>bottom_screen_phone</title>
 
-<body class="screen">
-    <article class="h-50 slot"> <!--top screen-->
+<body class="screen pokedex">
+    <article class="h-50 h-100-xl slot pokedex__slot"> <!--top screen-->
         <div class="slot__machine">
             <div class="slot__window"></div>
         </div>
@@ -88,17 +88,17 @@
             <div class="slot__spacer"></div>
         </div>
     </article>
-    <article class="bottom_screen">
-        <article class="bottom_screen_box1">
+    <article class="bottom_screen d-contents-xl">
+        <article class="bottom_screen_box1 d-contents-xl">
             <!--beginning of the box starting with the red banner-->
-            <section class="bottom_screen_box1_top"></section>
-            <article class="bottom_screen_box1_middle">
-                <form  action="ivysaur.png" class="box_searchbar">
+            <section class="bottom_screen_box1_top d-none-xl"></section>
+            <article class="bottom_screen_box1_middle d-contents-xl">
+                <form  action="ivysaur.png" class="box_searchbar pokedex__search w-100-xl">
                     <input type="text" class="searchbar" placeholder="search..." ></input>
                     <button type="submit" class="magnifying_glass" href="/venusaur.png"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                <div class="Teste_Pokeball">
-                    <div class="bottom_screen_box1_middle_details">
+                <div class="Teste_Pokeball d-contents-xl">
+                    <div class="bottom_screen_box1_middle_details pokedex__details">
                         <ul class="List_Attribut">
                             <li>Type:<img class="Image_Type" src="images/logo_type_pokemon_éclaire.png"/></li>
                             <li>Weakness:<img class="Image_Type" src="images/logo_type_pokemon_éclaire.png"/></li>
@@ -107,10 +107,10 @@
                             <li>Height: ???</li>
                         </ul>
                     </div>
-                    <img src="images/Pokeball-right.png" height="250"/>
+                    <img class="d-none-xl" src="images/Pokeball-right.png" height="250"/>
                 </div>    
             </article>
-            <section class="bottom_screen_box1_bottom">
+            <section class="bottom_screen_box1_bottom d-none-xl">
                 <img src="images/game-boy-logo-png-transparent.png" class="Gameboy_phone">
             </section>
             <!--end of the box with the gameboy logo-->

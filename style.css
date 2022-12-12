@@ -1,3 +1,4 @@
+@import "animation_screen.css";
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -39,6 +40,8 @@ html {
 .top_screen {
   display: flex;
   height: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .bottom_screen {
@@ -197,12 +200,6 @@ html {
     align-self: center;
     justify-self: center;
   }
-  .d-contents-xl {
-    display: contents;
-  }
-  .d-none-xl {
-    display: none;
-  }
 }
 .Box_Change_Character {
   display: flex;
@@ -306,7 +303,19 @@ html {
   height: 20px;
 }
 
-@media screen and (min-width: 330px) and (max-width: 1200px) {
+.Teste_Pokeball {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.bottom_screen_box1_middle {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
   .bottom_screen_box1_middle_details,
 .box_searchbar {
     width: 100%;
@@ -781,5 +790,13 @@ body {
   }
   .w-100-xxl {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .d-contents-xl {
+    display: contents;
+  }
+  .d-none-xl {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

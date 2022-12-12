@@ -1,4 +1,14 @@
-@media screen and (min-width: 330px) and (max-width: 1200px) {
+.Teste_Pokeball {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+.bottom_screen_box1_middle {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 1200px) {
     .bottom_screen_box1_middle_details,
     .box_searchbar {
         width: 100%;

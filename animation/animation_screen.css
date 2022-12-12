@@ -30,6 +30,7 @@ html {
     background: -webkit-linear-gradient(0deg,#3232fc 40%, #85e367 40%, #85e367 45%, #ff52e8 45%, #ff52e8 50%, #ff0151 50%, #ff0151 55%, #f9e52e 55%, #f9e52e 60%, #3232fc 40%);
     background-position: 600px;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: screen-gameboy-text 5s infinite linear;
     animation: screen-gameboy-text 5s infinite linear;
