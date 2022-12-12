@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*Animations page principale Mobil*/
+/*Animations Détails */
+@-webkit-keyframes characterAnimDetails {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes characterAnimDetails {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=Animation.css.map */
