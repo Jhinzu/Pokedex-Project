@@ -1,0 +1,21 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul, ol {
+    list-style: none;
+}
