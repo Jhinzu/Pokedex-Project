@@ -1,0 +1,31 @@
+@use "styles/variables";
+
+html,
+body {
+    height: 100%;
+}
+
+@for $i from 1 through 10 {
+    $i10: $i * 10;
+
+    .h-#{$i10} {
+        height: $i10 * 1%;
+    }
+    .w-#{$i10} {
+        width: $i10 * 1%;
+    }
+}
+
+@each $name, $breakpoint in variables.$grid-breakpoints {
+    @media screen and (min-width: $breakpoint) {
+        @for $i from 1 through 10 {
+            $i10: $i * 10;
+            .h-#{$i10}-#{$name} {
+                height: $i10 * 1%;
+            }
+            .w-#{$i10}-#{$name} {
+                width: $i10 * 1%;
+            }
+        }
+    }
+}

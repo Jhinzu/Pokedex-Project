@@ -1,0 +1,143 @@
+@use "styles/variables";
+@use "sass:map";
+
+$image-size: 80px;
+$border-size: 2px;
+
+.slot {
+    position: relative;
+
+    $window_height: $image-size * 3 + $border-size * 2;
+    $window_width: $image-size + $border-size * 2;
+
+    &__machine {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        pointer-events: none;
+
+        &::before,
+        &::after {
+            content: " ";
+            height: calc(50% - $window_height/2);
+            background: white;
+            display: block;
+            pointer-events: auto;
+        }
+    }
+
+    &__window {
+        pointer-events: none;
+        left: $border-size * -1;
+        border: $border-size black solid;
+        width: $window_width;
+        height: $window_height;
+        display: block;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 0) 25%,
+            rgba(0, 0, 0, 0) 75%,
+            rgba(0, 0, 0, 1) 100%
+        );
+    }
+
+    &__scroller {
+        height: 100%;
+        overflow-y: scroll;
+        scroll-snap-type: y proximity;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        height: $image-size;
+        margin-left: 2px;
+        scroll-snap-align: center;
+    }
+
+    &__img,
+    &__img img {
+        height: $image-size;
+        width: $image-size;
+    }
+
+    &__spacer {
+        &:first-child {
+            scroll-snap-align: start;
+        }
+        &:last-child {
+            scroll-snap-align: end;
+        }
+        height: calc(50% + $image-size/2);
+    }
+}
+
+/* responsive */
+
+@media screen and (max-width: map.get(variables.$grid-breakpoints, xl)) {
+    .bottom_screen_box1_middle_details,
+    .box_searchbar {
+        width: 100%;
+    }
+
+    .bottom_screen_box1_middle {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .box_searchbar {
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    .slot {
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: map.get(variables.$grid-breakpoints, xl)) {
+    html {
+        display: flex;
+        background-image: url("images/gameboyadvance.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .pokedex {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        gap: 0 100px;
+        grid-template-areas: 
+            ". grid__slot grid__slot"
+            "grid__details grid__slot grid__slot"
+            "grid__search grid__slot grid__slot";
+
+        max-width: 890px;
+        max-height: 600px;
+        margin: auto;
+    }
+
+    .pokedex__details {
+        grid-area: grid__details;
+    }
+
+    .pokedex__slot {
+        grid-area: grid__slot;
+    }
+
+    .pokedex__search {
+        grid-area: grid__search;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .d-contents-xl {
+        display: contents;
+    }
+
+    .d-none-xl {
+        display: none;
+    }
+}

@@ -1,0 +1,27 @@
+.Image_Sexe {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.Image_Type {
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.Image_Atribut {
+    vertical-align: middle;
+    margin-left: 3px;
+    height: 100%;
+}
+
+.List_Attribut {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+
+    li {
+        height: 20px;
+    }
+}
